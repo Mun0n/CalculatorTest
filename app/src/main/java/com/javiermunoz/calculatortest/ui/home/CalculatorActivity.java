@@ -16,6 +16,8 @@ import com.javiermunoz.calculatortest.R;
 public class CalculatorActivity extends ActionBarActivity {
 
   private GridView gridView;
+  private TextView mainTextView;
+  private boolean isCommaSet = false;
 
   private final int BUTTON_0 = 13;
   private final int BUTTON_1 = 8;
@@ -39,48 +41,78 @@ public class CalculatorActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_calculator);
 
+    mainTextView = (TextView) findViewById(R.id.resultTextView);
+
     gridView = (GridView) findViewById(R.id.buttonsGridView);
 
     gridView.setAdapter(new ButtonsAdapter(this));
 
     gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-        switch (position) {
-          case BUTTON_0:
-            break;
-          case BUTTON_1:
-            break;
-          case BUTTON_2:
-            break;
-          case BUTTON_3:
-            break;
-          case BUTTON_4:
-            break;
-          case BUTTON_5:
-            break;
-          case BUTTON_6:
-            break;
-          case BUTTON_7:
-            break;
-          case BUTTON_8:
-            break;
-          case BUTTON_9:
-            break;
-          case BUTTON_PLUS:
-            break;
-          case BUTTON_MINUS:
-            break;
-          case BUTTON_MULTP:
-            break;
-          case BUTTON_DIV:
-            break;
-          case BUTTON_COMMA:
-            break;
-          case BUTTON_EQUALS:
-            break;
-
-        }
+        buttonPressed(position);
       }
     });
+  }
+
+  private void buttonPressed(int position) {
+    switch (position) {
+      case BUTTON_0:
+        writeInMainText("0");
+        break;
+      case BUTTON_1:
+        writeInMainText("1");
+        break;
+      case BUTTON_2:
+        writeInMainText("2");
+        break;
+      case BUTTON_3:
+        writeInMainText("3");
+        break;
+      case BUTTON_4:
+        writeInMainText("4");
+        break;
+      case BUTTON_5:
+        writeInMainText("5");
+        break;
+      case BUTTON_6:
+        writeInMainText("6");
+        break;
+      case BUTTON_7:
+        writeInMainText("7");
+        break;
+      case BUTTON_8:
+        writeInMainText("8");
+        break;
+      case BUTTON_9:
+        writeInMainText("9");
+        break;
+      case BUTTON_PLUS:
+        mainTextView.setText("0");
+        break;
+      case BUTTON_MINUS:
+        mainTextView.setText("0");
+        break;
+      case BUTTON_MULTP:
+        mainTextView.setText("0");
+        break;
+      case BUTTON_DIV:
+        mainTextView.setText("0");
+        break;
+      case BUTTON_COMMA:
+        if (!isCommaSet) {
+          isCommaSet = true;
+          mainTextView.setText(mainTextView.getText() + ",");
+        }
+        break;
+      case BUTTON_EQUALS:
+
+        break;
+    }
+  }
+
+  private void writeInMainText(String text) {
+    if (!mainTextView.getText().toString().equalsIgnoreCase("0")) {
+      mainTextView.setText(mainTextView.getText() + text);
+    }
   }
 }

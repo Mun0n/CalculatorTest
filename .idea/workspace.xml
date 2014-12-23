@@ -17,7 +17,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.javiermunoz.calculatortest" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="136464a6-e56a-41f0-90f0-df025bbc511c" name="Default" comment="" />
+    <list default="true" id="136464a6-e56a-41f0-90f0-df025bbc511c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/CalculatorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/CalculatorActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="CalculatorTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +47,11 @@
       <file leaf-file-name="CalculatorActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/CalculatorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6619965" vertical-offset="77" max-vertical-offset="1458">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.96847636" vertical-offset="1283" max-vertical-offset="2034">
+              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
               <folding>
-                <element signature="e#1415#2319#0" expanded="true" />
-                <element signature="e#2312#2313#0" expanded="true" />
+                <element signature="e#1552#1724#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,15 +107,15 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.923077" vertical-offset="0" max-vertical-offset="684">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="702">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
               <folding>
                 <element signature="e#222#255#0" expanded="true" />
                 <element signature="e#280#313#0" expanded="true" />
                 <element signature="e#420#434#0" expanded="true" />
                 <element signature="e#635#670#0" expanded="true" />
                 <element signature="e#696#731#0" expanded="true" />
-                <element signature="e#1031#1052#0" expanded="true" />
+                <element signature="e#1061#1082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,6 +154,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -756,8 +764,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_button_item.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/ButtonsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/javiermunoz/calculatortest/activityinstumentation/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/CalculatorActivity.java" />
       </list>
     </option>
@@ -768,7 +776,7 @@
     <option name="width" value="1924" />
     <option name="height" value="1032" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1043,13 +1051,18 @@
     <property name="DEBUGGABLE_PROCESS" value="com.javiermunoz.calculatortest" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.javiermunoz.calculatortest.ui.home" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Tests.All Tests">
+  <component name="RunManager" selected="Android Application.app">
     <configuration default="false" name="All in app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1262,6 +1275,9 @@
       <AnalysisUIOptions />
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="136464a6-e56a-41f0-90f0-df025bbc511c" name="Default" comment="" />
@@ -1275,7 +1291,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1294,8 +1310,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1332,8 +1348,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1415#2319#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#1552#1724#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1351,7 +1367,7 @@
             <element signature="e#420#434#0" expanded="true" />
             <element signature="e#635#670#0" expanded="true" />
             <element signature="e#696#731#0" expanded="true" />
-            <element signature="e#1031#1052#0" expanded="true" />
+            <element signature="e#1061#1082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1395,24 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.923077" vertical-offset="0" max-vertical-offset="684">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#222#255#0" expanded="true" />
-            <element signature="e#280#313#0" expanded="true" />
-            <element signature="e#420#434#0" expanded="true" />
-            <element signature="e#635#670#0" expanded="true" />
-            <element signature="e#696#731#0" expanded="true" />
-            <element signature="e#1031#1052#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/javiermunoz/calculatortest/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -1451,13 +1449,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="702">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#222#255#0" expanded="true" />
+            <element signature="e#280#313#0" expanded="true" />
+            <element signature="e#420#434#0" expanded="true" />
+            <element signature="e#635#670#0" expanded="true" />
+            <element signature="e#696#731#0" expanded="true" />
+            <element signature="e#1061#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/javiermunoz/calculatortest/ui/home/CalculatorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6619965" vertical-offset="77" max-vertical-offset="1458">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.96847636" vertical-offset="1283" max-vertical-offset="2034">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
           <folding>
-            <element signature="e#1415#2319#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#1552#1724#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
           </folding>
         </state>
       </provider>
