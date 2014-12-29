@@ -19,6 +19,10 @@ public class CalculatorActivity extends ActionBarActivity {
   private TextView mainTextView;
   private boolean isCommaSet = false;
 
+  private String firstNumber = "";
+  private String secondNumber = "";
+  private String operator = "";
+
   private final int BUTTON_0 = 13;
   private final int BUTTON_1 = 8;
   private final int BUTTON_2 = 9;
@@ -87,7 +91,7 @@ public class CalculatorActivity extends ActionBarActivity {
         writeInMainText("9");
         break;
       case BUTTON_PLUS:
-        mainTextView.setText("0");
+        sumFunctionallity();
         break;
       case BUTTON_MINUS:
         mainTextView.setText("0");
@@ -105,14 +109,54 @@ public class CalculatorActivity extends ActionBarActivity {
         }
         break;
       case BUTTON_EQUALS:
-
+        equalsFunctionallity();
         break;
     }
   }
 
+  private void equalsFunctionallity() {
+    String actuallyInMain = mainTextView.getText().toString();
+    if (!firstNumber.equalsIgnoreCase("")) {
+      if (operator.equalsIgnoreCase("+")) {
+        int result = (Integer.parseInt(firstNumber) + Integer.parseInt(actuallyInMain));
+        mainTextView.setText(result);
+      }
+    }
+  }
+
+  private void sumFunctionallity() {
+    String actuallyInMain = mainTextView.getText().toString();
+    operator = "+";
+    if (actuallyInMain.equalsIgnoreCase("0")) {
+      if (!firstNumber.equalsIgnoreCase("")) {
+        mainTextView.setText(firstNumber);
+      } else {
+        mainTextView.setText("0");
+      }
+    } else {
+      if (!firstNumber.equalsIgnoreCase("")) {
+        int result = Integer.parseInt(firstNumber) + Integer.parseInt(actuallyInMain);
+        mainTextView.setText(result);
+      } else {
+        firstNumber = mainTextView.getText().toString();
+        mainTextView.setText("0");
+      }
+    }
+  }
+
   private void writeInMainText(String text) {
-    if (!mainTextView.getText().toString().equalsIgnoreCase("0")) {
+    String comparingWith = mainTextView.getText().toString();
+    if (!comparingWith.equalsIgnoreCase("0")) {
       mainTextView.setText(mainTextView.getText() + text);
+    } else if (comparingWith.equalsIgnoreCase("+")
+        || comparingWith.equalsIgnoreCase("-")
+        || comparingWith.equalsIgnoreCase("*")
+        || comparingWith.equalsIgnoreCase("/")
+        || comparingWith.equalsIgnoreCase("=")
+        || comparingWith.equalsIgnoreCase(",")) {
+
+    } else {
+      mainTextView.setText(text);
     }
   }
 }
