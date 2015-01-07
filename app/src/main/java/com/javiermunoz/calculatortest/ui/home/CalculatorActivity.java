@@ -119,7 +119,7 @@ public class CalculatorActivity extends ActionBarActivity {
     if (!firstNumber.equalsIgnoreCase("")) {
       if (operator.equalsIgnoreCase("+")) {
         int result = (Integer.parseInt(firstNumber) + Integer.parseInt(actuallyInMain));
-        mainTextView.setText(result);
+        mainTextView.setText("" + result);
       }
     }
   }
