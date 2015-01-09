@@ -12,6 +12,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static org.hamcrest.Matchers.allOf;
 
 /**
  * Created by javier.munoz on 23/12/14.
@@ -30,11 +31,10 @@ public class CalculatorTest extends ActivityInstrumentationTestCase2<CalculatorA
     }
 
     public void testSumNumbers() {
-        //onView(allOf(withText("5"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
-        //onView(allOf(withText("+"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
-        //onView(allOf(withText("7"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
-        //onView(allOf(withText("="), withId(R.id.buttonCalculator))).perform(ViewActions.click());
-        //onView(allOf(withId(R.id.resultTextView))).check(matches(withText("12")));
-        onView(withId(R.id.resultTextView)).check(matches(isDisplayed()));
+        onView(allOf(withText("5"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
+        onView(allOf(withText("+"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
+        onView(allOf(withText("7"), withId(R.id.buttonCalculator))).perform(ViewActions.click());
+        onView(allOf(withText("="), withId(R.id.buttonCalculator))).perform(ViewActions.click());
+        onView(allOf(withId(R.id.resultTextView))).check(matches(withText("12")));
     }
 }
