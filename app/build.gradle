@@ -12,7 +12,6 @@ android {
     versionName "1.0"
 
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
   }
   buildTypes {
     release {
@@ -27,8 +26,12 @@ android {
     exclude 'META-INF/LICENSE.txt'
     exclude 'META-INF/NOTICE'
   }
+}
 
-
+sourceSets {
+  testLocal {
+    java.srcDir file('src/androidTest/java')
+  }
 }
 
 dependencies {
@@ -40,6 +43,5 @@ dependencies {
   // Testing-only dependencies
   androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
   androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
-
 }
 
