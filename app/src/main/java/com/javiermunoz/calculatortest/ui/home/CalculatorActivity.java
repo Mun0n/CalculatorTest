@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
+
 import com.javiermunoz.calculatortest.R;
 
 public class CalculatorActivity extends ActionBarActivity {
@@ -79,7 +80,7 @@ public class CalculatorActivity extends ActionBarActivity {
             }
         } else {
             if (!firstNumber.equalsIgnoreCase("")) {
-                float result = 0;
+                float result;
                 if (operator.equalsIgnoreCase(AppConstants.BUTTON_PLUS)) {
                     result = (Float.parseFloat(firstNumber) + Float.parseFloat(currentlyInMain));
                 } else if (operator.equalsIgnoreCase(AppConstants.BUTTON_MINUS)) {
@@ -106,7 +107,7 @@ public class CalculatorActivity extends ActionBarActivity {
 
         if (!firstNumber.equalsIgnoreCase("") && !currentlyInMain.equalsIgnoreCase("0")) {
             try {
-                float result = 0;
+                float result;
                 if (operator.equalsIgnoreCase(AppConstants.BUTTON_PLUS)) {
                     result = (Float.parseFloat(firstNumber) + Float.parseFloat(currentlyInMain));
                 } else if (operator.equalsIgnoreCase(AppConstants.BUTTON_MINUS)) {
@@ -135,11 +136,11 @@ public class CalculatorActivity extends ActionBarActivity {
         if (!comparingWith.equalsIgnoreCase("0")) {
             mainTextView.setText(mainTextView.getText() + text);
         } else if (!comparingWith.equalsIgnoreCase("+")
-            && !comparingWith.equalsIgnoreCase("-")
-            && !comparingWith.equalsIgnoreCase("*")
-            && !comparingWith.equalsIgnoreCase("/")
-            && !comparingWith.equalsIgnoreCase("=")
-            && !comparingWith.equalsIgnoreCase(",")) {
+                && !comparingWith.equalsIgnoreCase("-")
+                && !comparingWith.equalsIgnoreCase("*")
+                && !comparingWith.equalsIgnoreCase("/")
+                && !comparingWith.equalsIgnoreCase("=")
+                && !comparingWith.equalsIgnoreCase(",")) {
 
             mainTextView.setText(text);
         }

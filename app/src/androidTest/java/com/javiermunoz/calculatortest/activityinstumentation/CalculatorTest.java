@@ -3,6 +3,7 @@ package com.javiermunoz.calculatortest.activityinstumentation;
 import android.support.test.espresso.action.ViewActions;
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.LargeTest;
+
 import com.javiermunoz.calculatortest.R;
 import com.javiermunoz.calculatortest.ui.home.CalculatorActivity;
 

@@ -1,8 +1,5 @@
 package com.javiermunoz.calculatortest.ui.home;
 
-/**
- * Created by hector on 8/1/15.
- */
 public class AppConstants {
     static final String BUTTON_0 = "0";
     static final String BUTTON_1 = "1";
@@ -22,9 +19,9 @@ public class AppConstants {
     static final String BUTTON_EQUALS = "=";
 
     public static final String[] numbers = new String[]{
-        BUTTON_7, BUTTON_8, BUTTON_9, BUTTON_DIV,
-        BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_MULTP,
-        BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_MINUS,
-        BUTTON_DOT, BUTTON_0, BUTTON_EQUALS, BUTTON_PLUS
+            BUTTON_7, BUTTON_8, BUTTON_9, BUTTON_DIV,
+            BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_MULTP,
+            BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_MINUS,
+            BUTTON_DOT, BUTTON_0, BUTTON_EQUALS, BUTTON_PLUS
     };
 }
