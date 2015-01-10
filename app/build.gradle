@@ -12,6 +12,7 @@ android {
     versionName "1.0"
 
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
   }
   buildTypes {
     release {
@@ -26,12 +27,12 @@ android {
     exclude 'META-INF/LICENSE.txt'
     exclude 'META-INF/NOTICE'
   }
-}
 
 sourceSets {
   testLocal {
-    java.srcDir file('src/androidTest/java')
+     java.srcDir file('src/androidTest/java')
   }
+
 }
 
 dependencies {
